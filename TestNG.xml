@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Guess The Number Test Suite">
+
+    <listeners>
+        <listener class-name="utils.listeners.TestListener"/>
+        <listener class-name="utils.listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="GameStartTest">
+        <classes>
+            <class name="tests.GameStartTest"/>
+        </classes>
+    </test>
+
+    <test name="GameCluesTest">
+        <classes>
+            <class name="tests.GameCluesTest"/>
+        </classes>
+    </test>
+
+    <test name="EndGameTest">
+        <classes>
+            <class name="tests.EndGameTest"/>
+        </classes>
+    </test>
+</suite>
